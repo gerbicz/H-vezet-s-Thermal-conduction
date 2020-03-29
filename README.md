@@ -1,1 +1,1 @@
-# H-vezet-s-Thermal-conduction
+# Hővezetés-Thermal-conduction
