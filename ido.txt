@@ -1,0 +1,27 @@
+Idõ másodpercben 3 különbözõ programmal:
+[ gép: P4 Celeron 1.7 GHz, 256 MB RAM ]
+n  Mathematica   c       Pari-Gp
+5  <1 ( 0 )      <1      <1
+10  3 ( 0 )      <1      28
+15  19 ( 1 )     4       6120
+20  94 ( 2  )    29      memória
+25  353 ( 6 )    139     memória
+30  1074 ( 17 )  1406    memória
+
+
+pari: n=15-re már a virtuális memóriában dolgozik
+n=20-ra már elfogy a virtuális memória is.
+
+c-ben: O(n^7) idõ és O(n^5) memória
+~16*n^5 byte memóriát igényel
+n=30-ra virtuális memória kellett.
+
+memória (MB):
+
+n   Mathematica c   Pari-Gp
+5   <13         <1  <1
+10  17          2   13
+15  34          13  152
+20  74          52  memória
+25  166         154 memória
+30  460         376 memória
